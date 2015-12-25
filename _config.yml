@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: zlw's Blog
+subtitle: zlw
 description:
-author: John Doe
-language:
+author: zlw
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: yilia
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

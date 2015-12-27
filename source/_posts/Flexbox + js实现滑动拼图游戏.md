@@ -1,11 +1,11 @@
 title: "Flexbox + js实现滑动拼图游戏"
 date: "2015-08-23"
-category: ["CSS3", "HTML5", "JavaScript"]
+categories: "JavaScript"
 tags: ["flex", "滑动拼图"]
 ---
 
 滑动拼图就是把一张图片分成几等份，打乱顺序（下图），然后通过滑动拼凑成一张完整的图片。
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_pintu.png)
+![](/assets/blogImg/o_pintu.png)
 <!--more-->
 要实现一个拼图游戏，需要考虑怎样随机的打乱顺序，怎样交换两张图片的位置，等等。但是，使用了Flexbox布局以后，这都不需要你去考虑，浏览器会帮你做，Flexbox就是这么的强大。关于Flexbox的介绍可以点击[这里](http://www.w3cplus.com/css3/a-guide-to-flexbox-new.html)。
 

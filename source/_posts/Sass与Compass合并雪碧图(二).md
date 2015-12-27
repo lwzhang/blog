@@ -1,6 +1,6 @@
 title: "Sass与Compass合并雪碧图(二)"
 date: "2015-08-30"
-category: ["CSS", "SASS"]
+categories: "SASS"
 tags: ["sprite", "sprites", "sass", "compass", "雪碧图", "合并图片"]
 ---
 
@@ -73,7 +73,7 @@ tags: ["sprite", "sprites", "sass", "compass", "雪碧图", "合并图片"]
 		background-position: px2rem(sprite-position($icons, car-icon));
 	}
 但是，编译的时候出错了，错误如下：
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_20150830131155.png)	
+![](/assets/blogImg/o_20150830131155.png)
 
 意思就是：`background-position`的值为`-250px 0`，并不能简单的使用`px2rem`函数，那该怎么办？我们先来判断一下传递给函数的参数的类型：
 	
@@ -84,7 +84,7 @@ tags: ["sprite", "sprites", "sass", "compass", "雪碧图", "合并图片"]
 
 再次编译(可以使用`compass watch`进行监听文件的修改)，命令行提示如下图:
 
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_20150830131942.png)
+![](/assets/blogImg/o_20150830131942.png)
 
 从图中可以知道：`$width`、`$height`的类型是`number`,而`$pos`类型是`list`。知道了什么类型就可以对症下药了，修改函数如下：
 

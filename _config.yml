@@ -4,8 +4,8 @@
 
 # Site
 title: zlw's Blog
-subtitle: zlw
-description:
+subtitle: 啦啦啦，啦啦啦，我是卖报的小行家
+description: 我有一只小毛驴，我从来也不骑。有一天我心血来潮骑着去赶集。我手里拿着小皮鞭我心里正得意。不知怎么哗啦啦啦啦啦，我摔了一身泥
 author: zlw
 language: zh-Hans
 timezone:
@@ -71,3 +71,7 @@ deploy:
   type: git
   repository: https://github.com/lwzhang/lwzhang.github.io.git
   branch: master
+
+
+
+disqus_shortname: zlwxlj

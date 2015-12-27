@@ -1,6 +1,6 @@
 title: "JavaScript之函数科里化"
 date: "2015-04-04"
-category: "JavaScript"
+categories: "JavaScript"
 tags: ["科里化", "curry", "currying"]
 ---
 

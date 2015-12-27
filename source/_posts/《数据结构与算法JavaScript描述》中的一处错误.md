@@ -1,6 +1,6 @@
 title: "《数据结构与算法JavaScript描述》中的一处错误"
 date: "2015-03-04"
-category: "JavaScript"
+categories: "JavaScript"
 tags: ["数据结构"]
 ---
 

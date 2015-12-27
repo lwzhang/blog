@@ -1,6 +1,6 @@
 title: "元素rotate之后，宽度该怎么计算？"
 date: "2015-11-13"
-category: "CSS3"
+categories: "CSS3"
 tags: ["transform", "rotate"]
 ---
 
@@ -24,10 +24,10 @@ tags: ["transform", "rotate"]
 效果如下：
 
 
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_QQ%e5%9b%be%e7%89%8720151113214149.png)
+![](/assets/blogImg/o_QQ%e5%9b%be%e7%89%8720151113214149.png)
 
 图中四边形的宽高都是`100px`，然后旋转了`45`度，当用浏览器查看它的宽高时就变成了`141.421px`。浏览器是怎么计算的呢？简单画了一个草图。
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_QQ%e6%88%aa%e5%9b%be20151113215400.png)
+![](/assets/blogImg/o_QQ%e6%88%aa%e5%9b%be20151113215400.png)
 
 
 旋转之后，元素的大小其实就变成了红色框的大小，很容易可以计算得到红色框的宽高为`141.421px`。

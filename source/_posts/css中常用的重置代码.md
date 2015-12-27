@@ -1,6 +1,6 @@
 title: "css中常用的重置代码"
 date: "2015-07-14"
-category: "CSS3"
+categories: "CSS3"
 tags: ["placeholder", "小三角", "spinners", "滚动条"]
 ---
 

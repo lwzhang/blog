@@ -1,6 +1,6 @@
 title: "Sass与Compass合并雪碧图(一)"
 date: "2015-08-29"
-category: ["CSS", "SASS"]
+categories: "SASS"
 tags: ["sprite", "sprites", "sass", "compass", "雪碧图", "合并图片"]
 ---
 
@@ -151,10 +151,10 @@ tags: ["sprite", "sprites", "sass", "compass", "雪碧图", "合并图片"]
 
 下面是四种布局生成的图片：
 <div style="text-align:center">
-<img src="http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_icons-s22b9e851cd.png" />
-<img src="http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_icons-s37f950be3b.png" />
-<img src="http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_icons-s4d555ef71f.png" />
-<img src="http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_icons-sdd4c0db747.png" />
+<img src="/assets/blogImg/o_icons-s22b9e851cd.png" />
+<img src="/assets/blogImg/o_icons-s37f950be3b.png" />
+<img src="/assets/blogImg/o_icons-s4d555ef71f.png" />
+<img src="/assets/blogImg/o_icons-sdd4c0db747.png" />
 </div>
 
 

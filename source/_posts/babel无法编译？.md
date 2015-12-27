@@ -1,6 +1,6 @@
 title: "babel无法编译？"
 date: "2015-11-18"
-category: ["ES6", "JavaScript"]
+categories: "ES6"
 tags: [" babel", "babel-cli", "babel-core", "babel-node"]
 ---
 
@@ -17,7 +17,7 @@ tags: [" babel", "babel-cli", "babel-core", "babel-node"]
 
 下面来实践下(命令行使用babel)。
 
-###安装babel:
+### 安装babel:
 		
 	npm install -g babel
 

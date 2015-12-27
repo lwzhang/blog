@@ -1,6 +1,6 @@
 title: "CSS3实现图片渐入效果"
 date: "2015-03-07"
-category: "CSS3"
+categories: "CSS3"
 tags: ["transition", "transform", "图片渐入效果"]
 ---
 
@@ -86,14 +86,14 @@ transition属性是一个过渡属性，当元素从一种样式变换为另一�
 
 
 <div style="width: 400px; height: 400px; position: relative">
-   <img class="transImg" style="width: 400px; height: 400px; position: absolute; top: 0; transform: translate3d(0, 150px, 0);-ms-transform: translate3d(0, 150px, 0); -webkit-transform: translate3d(0, 150px, 0); -o-transform: translate3d(0, 150px, 0); -moz-transform: translate3d(0, 150px, 0); opacity: 0; transition: transform 1s ease 0s, opacity 1s ease 0s; -moz-transition: -moz-transform 1s ease 0s, opacity 1s ease 0s; -webkit-transition: -webkit-transform 1s ease 0s, opacity 1s ease 0s; -o-transition: -o-transform 1s ease 0s, opacity 1s ease 0s; -ms-transition: -ms-transform 1s ease 0s, opacity 1s ease 0s;" src="http://images.cnblogs.com/cnblogs_com/xljzlw/574255/o_300001295750131174054755371_950.jpg" />
+   <img class="transImg" style="width: 400px; height: 400px; position: absolute; top: 0; transform: translate3d(0, 150px, 0);-ms-transform: translate3d(0, 150px, 0); -webkit-transform: translate3d(0, 150px, 0); -o-transform: translate3d(0, 150px, 0); -moz-transform: translate3d(0, 150px, 0); opacity: 0; transition: transform 1s ease 0s, opacity 1s ease 0s; -moz-transition: -moz-transform 1s ease 0s, opacity 1s ease 0s; -webkit-transition: -webkit-transform 1s ease 0s, opacity 1s ease 0s; -o-transition: -o-transform 1s ease 0s, opacity 1s ease 0s; -ms-transition: -ms-transform 1s ease 0s, opacity 1s ease 0s;" src="/assets/blogImg/o_300001295750131174054755371_950.jpg" />
 	<script>
 		(function (win) {
 			$(function(){
         		$(win).scroll(function() {
             		var windowPageYOffset = window.pageYOffset,
             		windowPageYOffsetAddHeight = windowPageYOffset + window.innerHeight;
-          
+
                 	var imgOffsetTop = $(".transImg").offset().top;
                 	if (imgOffsetTop >= windowPageYOffset && imgOffsetTop < windowPageYOffsetAddHeight) {
                     	$(".transImg").css({

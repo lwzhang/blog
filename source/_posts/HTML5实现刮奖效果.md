@@ -1,6 +1,6 @@
 title: "HTML5实现刮奖效果"
 date: "2015-01-21"
-category: "JavaScript"
+categories: "JavaScript"
 tags: ["HTML5", "canvas", "刮奖效果"]
 ---
 

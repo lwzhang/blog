@@ -1,6 +1,6 @@
 title: "css3 transform属性多个值的顺序问题"
 date: "2015-11-14"
-category: "CSS3"
+categories: "CSS3"
 tags: [" transform", "transform多值顺序"]
 ---
 
@@ -31,13 +31,13 @@ tags: [" transform", "transform多值顺序"]
 			transform: rotate(45deg) translate(100px, 100px);
 		}
 
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_QQ%e6%88%aa%e5%9b%be20151115170222.png)
+![](/assets/blogImg/o_QQ%e6%88%aa%e5%9b%be20151115170222.png)
 
 红框一`transform`属性只有一个值`rotate(45deg)`，红框二多了一个值`translate(100px, 100px)`，水平和竖直都平移`100px`，但是从图中可以看到红框2只有竖直方向有位移。这是怎么回事？
 
 其实，当旋转`45`度后，元素的整个坐标系都旋转了`45`度，如下图：
 
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_QQ%e6%88%aa%e5%9b%be20151115171530.png)
+![](/assets/blogImg/o_QQ%e6%88%aa%e5%9b%be20151115171530.png)
 
 图1就是正常的坐标系，图2就是旋转`45`度后的坐标系。所以红框二就按旋转后的坐标系进行平移。因为我设置的值比较特殊，所以只有在竖直方向有位移。通过计算红框二竖直向下平移了`100√2px`，也就是红框对角线的长度。
 
@@ -70,7 +70,7 @@ tags: [" transform", "transform多值顺序"]
 		}
 
 
-![](http://images.cnblogs.com/cnblogs_com/xljzlw/676183/o_QQ%e6%88%aa%e5%9b%be20151115173609.png)
+![](/assets/blogImg/o_QQ%e6%88%aa%e5%9b%be20151115173609.png)
 
 
 图中可以看到，值的顺序对元素位置的影响。通过上面的介绍知道，红框先旋转再平移，即先旋转坐标系再平移，而绿框先按正常的坐标系平移，再旋转，所以它们的位置就不同了。

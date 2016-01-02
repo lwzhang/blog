@@ -46,9 +46,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7996485">
               <caret line="186" column="1" selection-start-line="186" selection-start-column="1" selection-end-line="186" selection-end-column="1" />
-              <folding>
-                <marker date="1451737617478" expanded="true" signature="0:5155" placeholder="[...]" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -740,9 +738,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7996485">
           <caret line="186" column="1" selection-start-line="186" selection-start-column="1" selection-end-line="186" selection-end-column="1" />
-          <folding>
-            <marker date="1451737617478" expanded="true" signature="0:5155" placeholder="[...]" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/_config.yml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/source/_posts/my-new-post.md" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/source/categories/index.md" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/source/resume/index.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/source/photo/index.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/source/photo/tool.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/source/photo/tool.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/themes/next/_config.yml" charset="UTF-8" />
   </component>
 </project>

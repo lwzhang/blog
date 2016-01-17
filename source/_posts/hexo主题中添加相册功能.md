@@ -26,11 +26,13 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
 
 执行上面命令，会在`source`文件夹中生成`photo`文件夹，打开`photo`文件夹中的`index.md`文件，修改内容如下：
 
+```
     title: 相册
     noDate: 'true'
     ---
     <link type="text/css" href="/fancybox/jquery.fancybox.css" rel="stylesheet">
     <div class="instagram"><section class="archives album"><ul class="img-box-ul"></ul></section></div>
+```
 
 相册的样式使用该主题作者的相册样式，如果大家使用其他主题，样式可以自己实现。
 
@@ -42,6 +44,7 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
 
 原生`js`不能很好的处理文件，所以用`js`并不能获取图片的文件名。虽然`js`不能处理文件，但是`nodejs`可以啊。在`source\photo`文件夹中新建一个`tool.js`文件，内容如下：
 
+```
     "use strict";
     const fs = require("fs");
     const path = "../../photos";
@@ -68,6 +71,7 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
             })
         }(0));
     });
+```
 
 `tool.js`的作用是把所有的图片名称放在一个`json`文件中。运行`node tool.js`就会在`source\photo`下创建一个`output.json`文件。每次你要添加新图片时，都要运行`node tool.js`。
 
@@ -78,6 +82,7 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
 在`yourBlog\themes\yilia\source\js`(`yourBlog`为你的博客根目录，将`yilia`替换为你使用的主题)文件夹下新建一个`photo.js`的文件夹。为什么在这里建呢？因为编译之后会出现在`public\js`文件夹中，博客使用的`js`都在这。
 `photo.js`代码如下：
 
+```
     define([], function () {
         return {
             page: 1,
@@ -124,11 +129,13 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
             }
         }
     })
+```
 
 因为不可能一次性将所有的图片都插入到页面中，所以我做了分页功能，一次加载20张图片。
 
 引入`photo.js`最直接的方法是在`index.md`文件中引入：
 
+```
     title: 相册
     noDate: 'true'
     ---
@@ -136,14 +143,17 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
     <div class="instagram"><section class="archives album"><ul class="img-box-ul"></ul></section></div>
 
     <script src="/js/photo.js"></script>
+```
 
 如果大家和我用的是同一主题，在`yourBlog\themes\yilia\source\js\main.js`文件末尾增加如下代码：
 
+```
     if($(".instagram").length) {
         require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
             obj.init();
         });
     }
+```
 
 如果不是，看大家使用的主题有什么限制了。
 
@@ -151,11 +161,13 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
 
 别忘了要在主题的配置文件`_config.yml`的`menu`下添加一个相册的菜单：
 
+```
     menu:
       首页: /
       归档: /archives
       随笔: /tags/随笔
       相册: photo
+```
 
 最后运行`hexo g`生成静态文件。就可以在本地查看或者上传`github`查看相册功能了。
 

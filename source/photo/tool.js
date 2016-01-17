@@ -1,8 +1,29 @@
 /**
  * Created by zlw on 2016/1/1.
  */
-var fs = require("fs");
+"use strict";
+const fs = require("fs");
+const path = "../../photos";
 
-fs.readdir("../../photos", function (err, files) {
-    fs.writeFile("output.json", JSON.stringify(files, null, "\t"));
+fs.readdir(path, function (err, files) {
+    if (err) {
+        return;
+    }
+    let arr = [];
+    (function iterator(index) {
+        if (index == files.length) {
+            fs.writeFile("output.json", JSON.stringify(arr, null, "\t"));
+            return;
+        }
+
+        fs.stat(path + "/" + files[index], function (err, stats) {
+            if (err) {
+                return;
+            }
+            if (stats.isFile()) {
+                arr.push(files[index]);
+            }
+            iterator(index + 1);
+        })
+    }(0));
 });

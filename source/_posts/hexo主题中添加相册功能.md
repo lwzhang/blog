@@ -1,5 +1,5 @@
 title: hexo主题中添加相册功能
-date: 2016-01-02 21:58:15
+date: 2016-01-017 18:50:15
 categories: "hexo"
 tags: ["hexo", "相册", "hexo相册", "yilia主题"]
 ---

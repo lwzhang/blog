@@ -131,6 +131,7 @@ tags: ["hexo", "相册", "hexo相册", "yilia主题"]
     })
 ```
 
+其中`https://github.com/lwzhang/blog/blob/master/photos/' + data[i] + '?raw=true`是上传至`github`的图片链接。
 因为不可能一次性将所有的图片都插入到页面中，所以我做了分页功能，一次加载20张图片。
 
 引入`photo.js`最直接的方法是在`index.md`文件中引入：
